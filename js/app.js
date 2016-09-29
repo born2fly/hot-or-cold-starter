@@ -7,11 +7,17 @@ $("a.close").click(function() {
     $(".overlay").fadeOut(1000);
 });
 
-$("#userGuess").click(function(event){ 
-  event.preventDefault();
-  var UserInput = $("#userGuess").val(); 
-  console.log(UserInput); 
+
+$("#guessButton").click(function(event){ 
+var userInput = $("#userGuess").val();
+  $("#userGuess").submit();
+   event.preventDefault();
+  console.log("Your guess is " + userInput); 
 });
+
+
+
+
 
 // $(".new").click(function(){ 
 //   $("#form")[0].reset(); 
